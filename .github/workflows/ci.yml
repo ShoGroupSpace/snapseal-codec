@@ -23,3 +23,14 @@ jobs:
         with:
           name: snapseal-offline-codec
           path: dist/snapseal-codec.html
+  python:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: examples/python/requirements.txt
+      - run: python -m pip install -r examples/python/requirements.txt
+      - run: python -m unittest discover -s tests/python -v
