@@ -1,0 +1,5 @@
+EFF Long Wordlist, Joseph Bonneau / Electronic Frontier Foundation.
+Source: https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Copyright policy: https://www.eff.org/copyright
+Adaptation: removed dice indices; words are unchanged.

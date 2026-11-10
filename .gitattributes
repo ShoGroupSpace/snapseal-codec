@@ -1,0 +1,2 @@
+# Preserve exact extracted bytes, including source line endings, for UPSTREAM.json.
+* -text

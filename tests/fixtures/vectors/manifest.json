@@ -1,0 +1,32 @@
+[
+  {
+    "file": "v1.snapseal",
+    "password": "x",
+    "metadata": {
+      "filename": "legacy.png",
+      "mimeType": "image/png"
+    },
+    "originalBase64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==",
+    "envelopeSHA256": "6c4efb5ff003c46ac88749525dfaf905fd38acb8405f9219473e2aa345f10e97"
+  },
+  {
+    "file": "v2.snapseal",
+    "password": "Public compatibility password 🔐",
+    "metadata": {
+      "filename": "note.txt",
+      "contentKind": "text"
+    },
+    "originalBase64": "ICBQdWJsaWMgbm90ZSDwn4yNDQoAZW5kCg==",
+    "envelopeSHA256": "74880ff581b31c455dff3277d996dc8b9940a03de75b38b1bb0366043a547ff6"
+  },
+  {
+    "file": "v3.snapseal",
+    "password": "Public compatibility password 🔐",
+    "metadata": {
+      "filename": "note.txt",
+      "contentKind": "text"
+    },
+    "originalBase64": "ICBQdWJsaWMgbm90ZSDwn4yNDQoAZW5kCg==",
+    "envelopeSHA256": "c40325c08b4b4ffb035bdb2352787c3636d760e25f61c03053b55f7f11a80413"
+  }
+]

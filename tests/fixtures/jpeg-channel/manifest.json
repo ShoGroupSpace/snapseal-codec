@@ -1,0 +1,20 @@
+{
+  "id": "current-280000-tiger",
+  "profile": "current",
+  "bytes": 280000,
+  "side": 1280,
+  "cover": "tiger",
+  "keep": true,
+  "bitsPerBlock": 101,
+  "step": 3.75,
+  "codewords": 1256,
+  "correctedSymbols": 0,
+  "worstCodeword": 0,
+  "password": "Research-only exact-byte recovery 2026",
+  "originalSHA256": "3a68f766faa81259e9e1754fc747a31646d680207131c8045aac8b816dd8edbd",
+  "envelopeSHA256": "a8c076cfb4a8697e3b47f7d04b0730bdbe3a686795a6af23b397c095b0673f70",
+  "encodeMs": 3038.0311,
+  "sourceBytes": 279890,
+  "losslessExact": true,
+  "wireFormat": "SSJ2"
+}
