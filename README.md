@@ -131,6 +131,26 @@ logo to support offline/file use. Original applications have not yet migrated
 to this repository as a dependency. Future changes must preserve compatibility
 vectors and be reconciled with the applications.
 
+## Python decoder example
+
+An independent [Python 3.12+ example](examples/python/decode_snapseal.py) reads
+**Argon2id v3** envelopes from original lossless PNGs, SnapSeal ZIPs or raw
+files. This includes original PNGs carrying the anti-compression channel;
+converted JPEG recovery requires the TypeScript codec. The example restores
+the original bytes locally, prompts for a password and never overwrites output.
+
+From a checkout, create and activate a virtual environment, then run:
+
+```sh
+python -m pip install -r examples/python/requirements.txt
+python examples/python/decode_snapseal.py protected-image.png --out restored
+python -m unittest discover -s tests/python -v
+```
+
+Tests use independent encryption vectors and a real PNG produced by this
+repository's TypeScript encoder with anti-compression enabled. The Python
+example deliberately focuses on v3; the TypeScript API retains older formats.
+
 ## License and contributions
 
 [MIT](LICENSE), with [third-party notices](THIRD-PARTY-NOTICES.md). The existing
