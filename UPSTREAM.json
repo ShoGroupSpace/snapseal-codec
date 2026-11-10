@@ -148,10 +148,10 @@
       "sha256": "1d5cdf1b996e4e83a92b2a0ec046d298701d33eb78e4613ff0b959f9e5eb4a1f"
     },
     {
-      "source": "public/icon-128.png",
+      "source": "apps/web/public/icon.png",
       "path": "assets/logo.png",
-      "sourceSHA256": "67ebb4b6116f9389e648543a8191a07fbc5c88d88759a5d6bd5c1e52af995397",
-      "sha256": "67ebb4b6116f9389e648543a8191a07fbc5c88d88759a5d6bd5c1e52af995397"
+      "sourceSHA256": "fe56fe83fe53e0c6206ade53ddd6eb3432a48830ebdfdc9eeec6d21e14bda235",
+      "sha256": "fe56fe83fe53e0c6206ade53ddd6eb3432a48830ebdfdc9eeec6d21e14bda235"
     },
     {
       "source": "packages/image-tools/FORMAT.md",

@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.png" width="96" alt="SnapSeal logo"></p>
+<p align="center"><img src="assets/logo.png" width="128" alt="SnapSeal logo"></p>
 
 # SnapSeal encoder and decoder for TypeScript
 
