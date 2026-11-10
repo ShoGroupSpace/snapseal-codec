@@ -1,40 +1,17 @@
 <p align="center"><img src="assets/logo.png" width="96" alt="SnapSeal logo"></p>
 
-# SnapSeal encoder & decoder
+# SnapSeal encoder and decoder for TypeScript
 
-Open-source TypeScript tools for protecting and restoring **images, files and
-text** in SnapSeal PNGs. Decode locally with the file and its password, without
-an account, extension, upload, or SnapSeal server.
+An open-source TypeScript library for encrypting **images, files and text** into
+PNG images and restoring the original bytes with a password.
 
-[SnapSeal](https://snapseal.app) is a screenshot studio for capture, editing and
-local history. This repository contains its protection codec, extracted from the
-website/extension implementation, including the **anti-compression JPEG recovery
-channel**, legacy password formats, branding and custom covers.
-
-## Offline app
-
-Download `snapseal-codec.html` from [Releases](https://github.com/ShoGroupSpace/snapseal-codec/releases),
-save it, and open it in a current desktop Chromium browser. It is a single HTML
-file containing the codec, WebAssembly, workers, logo, 51 language catalogs and
-license notices. It works from disk with the network disconnected. No CDN,
-analytics, account or remote service is used. Keep a copy with your archives.
-
-Choose **Unlock file**, select a protected PNG, supported JPEG, SnapSeal ZIP, or
-raw `.snapseal` envelope, enter the password, and download the original.
-Generic files are downloads only; HTML, SVG and executables are never rendered.
-
-Choose **Protect file** to create a PNG or ZIP using the same encoder as the
-website/extension. Automatic recovery is the current workspace default. A custom
-cover is optional; leaving it empty uses noise. The developer-facing Standard,
-HD and file-only options remain available for compatibility and research.
-The compact offline interface does not reproduce the full screenshot studio.
-Browser memory/performance varies; physical-phone performance is not certified.
-
-**Keep your password. There is no password recovery.** Send the original PNG or
-ZIP as a file/document. JPEG recovery is best effort: supported same-size photo
-compression may work; arbitrary compression, resizing, cropping, rotation and
-messenger transformations can destroy the payload. Neither embedding nor public
-cover artwork makes the contents undetectable or proves cover authenticity.
+Built from the same code used by
+[SnapSeal — screenshot capture, editing and encrypted file protection](https://snapseal.app/),
+the library lets you add SnapSeal-compatible encoding and decoding to your own
+tools. It combines AES-256-GCM encryption, Argon2id key derivation and PNG
+steganography, with an optional JPEG recovery channel for supported photo
+compression. Existing PBKDF2-protected files remain readable. Processing stays
+local, without an account, upload or SnapSeal server.
 
 ## Build and test
 
@@ -159,3 +136,28 @@ vectors and be reconciled with the applications.
 [MIT](LICENSE), with [third-party notices](THIRD-PARTY-NOTICES.md). The existing
 SnapSeal logo is included for project identification. Trademark rights are not
 granted. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+
+## Offline app
+
+Download `snapseal-codec.html` from [Releases](https://github.com/ShoGroupSpace/snapseal-codec/releases),
+save it, and open it in a current desktop Chromium browser. It is a single HTML
+file containing the codec, WebAssembly, workers, logo, 51 language catalogs and
+license notices. It works from disk with the network disconnected. No CDN,
+analytics, account or remote service is used. Keep a copy with your archives.
+
+Choose **Unlock file**, select a protected PNG, supported JPEG, SnapSeal ZIP, or
+raw `.snapseal` envelope, enter the password, and download the original.
+Generic files are downloads only; HTML, SVG and executables are never rendered.
+
+Choose **Protect file** to create a PNG or ZIP using the same encoder as the
+website/extension. Automatic recovery is the current workspace default. A custom
+cover is optional; leaving it empty uses noise. The developer-facing Standard,
+HD and file-only options remain available for compatibility and research.
+The compact offline interface does not reproduce the full screenshot studio.
+Browser memory/performance varies; physical-phone performance is not certified.
+
+**Keep your password. There is no password recovery.** Send the original PNG or
+ZIP as a file/document. JPEG recovery is best effort: supported same-size photo
+compression may work; arbitrary compression, resizing, cropping, rotation and
+messenger transformations can destroy the payload. Neither embedding nor public
+cover artwork makes the contents undetectable or proves cover authenticity.
